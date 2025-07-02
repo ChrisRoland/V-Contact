@@ -17,7 +17,7 @@ async function signIn() {
   if (err) {
     error.value = err.message
   } else {
-    alert('Welcome back!')
+    // alert('Welcome back!')
     // Navigate to Dashboard by route name:
     router.push({ name: 'Dashboard' })
   }
