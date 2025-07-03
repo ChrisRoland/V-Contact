@@ -1,7 +1,7 @@
 <script setup>
 import { useRoute } from 'vue-router'
 const route = useRoute()
-const showNav = route.name !== 'Dashboard'
+const showNav = route.name !== 'Home'
 </script>
 
 <template>
@@ -10,7 +10,6 @@ const showNav = route.name !== 'Dashboard'
       <router-link to="/dashboard">Dashboard</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/login">Log In</router-link>
-      <router-link to="/register">Register</router-link>
   </nav>
   <router-view />
 </template>
