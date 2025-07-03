@@ -29,7 +29,7 @@ async function signUp() {
     const { error: err } = await supabase.auth.signUp({ 
         name: name.value,
         email: email.value, 
-        password: password.value 
+        password: password.value
     })
     
     if (err) {
