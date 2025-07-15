@@ -1,6 +1,6 @@
 <template>
   <div class="todo-app">
-    <h1>📝 My To-Do List</h1>
+    <h1>To-Dos</h1>
 
     <form @submit.prevent="addTodo">
       <input
@@ -62,7 +62,8 @@ function removeTodo(index) {
 
 <style scoped>
 .todo-app {
-  max-width: 500px;
+  max-width: 600px;
+  width: 400px;
   margin: 2rem auto;
   padding: 1rem;
   font-family: sans-serif;
