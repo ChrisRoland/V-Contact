@@ -23,6 +23,11 @@
     <button class="contact-button" @click="goToContact">
       Contact Us
     </button>
+
+    <!-- Contact Us Button -->
+    <button class="contact-button" @click="goToTodo">
+      <router-link to="/todo">ToDos</router-link>
+    </button>
   </div>
 </template>
 
@@ -33,6 +38,9 @@ const router = useRouter()
 
 function goToContact() {
   router.push({ name: 'Contact' })
+}
+function goToTodo() {
+  router.push({ name: 'Todo' })
 }
 </script>
 
@@ -53,6 +61,11 @@ function goToContact() {
 .subtitle {
   color: #555;
   margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .cards {
