@@ -15,13 +15,14 @@
     <ul>
       <li
         v-for="(todo, index) in todos"
+        title="Click to mark as done"
         :key="index"
         :class="{ completed: todo.done }"
       >
         <span @click="toggleTodo(index)">
           {{ todo.text }}
         </span>
-        <button @click="removeTodo(index)">❌</button>
+        <button title="Delete todo" @click="removeTodo(index)">❌</button>
       </li>
     </ul>
   </div>
@@ -91,7 +92,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f3f3f3;
+  background: #cdcbcb;
   margin-bottom: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -100,7 +101,7 @@ li {
 
 li.completed span {
   text-decoration: line-through;
-  color: #aaa;
+  color: #353434;
 }
 
 li span {

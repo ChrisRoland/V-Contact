@@ -19,15 +19,17 @@
       </div>
     </div>
 
-    <!-- Contact Us Button -->
-    <button class="contact-button" @click="goToContact">
-      Contact Us
-    </button>
-
-    <!-- Contact Us Button -->
-    <button class="contact-button" @click="goToTodo">
-      <router-link to="/todo">ToDos</router-link>
-    </button>
+    <div class="buttons">
+      <!-- Contact Us Button -->
+      <button class="contact-button" @click="goToContact">
+        Contact Us
+      </button>
+  
+      <!-- Go to Todos Button -->
+      <button class="contact-button" @click="goToTodo">
+        <router-link to="/todo">ToDos</router-link>
+      </button>
+    </div>
   </div>
 </template>
 
@@ -82,6 +84,12 @@ a {
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .contact-button {

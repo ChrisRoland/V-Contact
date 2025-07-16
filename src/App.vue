@@ -8,6 +8,7 @@ const showNav = route.name !== 'Home'
   <nav v-if="showNav" class="nav"> 
       <router-link to="/">Home</router-link>
       <router-link to="/dashboard">Dashboard</router-link>
+      <router-link to="/todo">ToDos</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/login">Log In</router-link>
   </nav>
